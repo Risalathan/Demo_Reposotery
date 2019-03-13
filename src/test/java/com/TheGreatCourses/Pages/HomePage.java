@@ -21,14 +21,6 @@ public class HomePage extends Hooks {
 	}
 
 	public HomePage click_CategoryScience() throws Exception {
-		// locating navigation next icon
-		/*WebElement navElem = driver.findElement(By.cssSelector(
-				"div.itemslider-wrapper:nth-child(4) > div:nth-child(1) > ul:nth-child(2) > li:nth-child(2) > a:nth-child(1)"));
-		for (int i = 1; i <=3; i++) {
-			navElem.click();
-			myLib.customWait(0.5);
-		}*/
-		// select the science category
 		WebElement scienceElem = driver
 				.findElement(By.xpath("/html/body/div[5]/div/div[4]/div/div[1]/div[3]/div/div/ul/li[2]/a/img[1]"));
 		myLib.highlightElement(scienceElem);
